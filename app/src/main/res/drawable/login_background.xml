@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base soft teal gradient background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#E0F7FA"
+                android:endColor="#B2EBF2"
+                android:angle="270" />
+        </shape>
+    </item>
+
+    <!-- Top-left large translucent bubble -->
+    <item android:left="0dp" android:top="0dp">
+        <shape android:shape="oval">
+            <size android:width="220dp" android:height="220dp" />
+            <solid android:color="#40B2DFDB" />
+        </shape>
+    </item>
+
+    <!-- Bottom-right medium bubble -->
+    <item android:right="20dp" android:bottom="60dp">
+        <shape android:shape="oval">
+            <size android:width="160dp" android:height="160dp" />
+            <solid android:color="#30B2EBF2" />
+        </shape>
+    </item>
+
+    <!-- Middle-right small bubble -->
+    <item android:right="80dp" android:top="180dp">
+        <shape android:shape="oval">
+            <size android:width="80dp" android:height="80dp" />
+            <solid android:color="#20FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- Bottom-left smaller bubble -->
+    <item android:left="40dp" android:bottom="100dp">
+        <shape android:shape="oval">
+            <size android:width="100dp" android:height="100dp" />
+            <solid android:color="#15FFFFFF" />
+        </shape>
+    </item>
+
+</layer-list>

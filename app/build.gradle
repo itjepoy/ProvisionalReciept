@@ -1,0 +1,88 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.cremcash.provisionalreciept'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.cremcash.provisionalreciept"
+        minSdk 28
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+        coreLibraryDesugaringEnabled true
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation libs.core.ktx
+    implementation libs.appcompat
+    //noinspection GradleDependency,GradleDependency
+    implementation libs.material.v1130alpha12
+    implementation libs.constraintlayout
+    implementation libs.lifecycle.livedata.ktx
+    implementation libs.lifecycle.viewmodel.ktx
+    implementation libs.androidx.legacy.support.v4
+    //noinspection GradleDependency
+    implementation libs.androidx.navigation.fragment.ktx
+    implementation libs.androidx.navigation.ui.ktx
+    implementation libs.circleimageview
+    //noinspection UseTomlInstead
+    implementation 'com.mikhaellopez:circularimageview:4.3.1'
+    implementation libs.expandabletextview
+    implementation libs.annotation
+    implementation libs.dexter
+
+    implementation libs.poi.v523
+    implementation libs.poi.ooxml.v523
+
+    implementation (libs.jooq.v31915) {
+        exclude group: 'org.jetbrains.kotlin'
+        exclude group: 'org.apache.commons'
+    }
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+    implementation libs.activity
+    implementation libs.androidx.media3.common
+    implementation libs.androidx.compiler
+
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    coreLibraryDesugaring libs.tools.desugar.jdk.libs
+
+    implementation libs.material // For TextInputEditText
+    implementation libs.androidx.appcompat.v161 // For Button, Context, SQLiteOpenHelper
+    //noinspection GradleDependency
+    implementation libs.core.ktx // For AsyncTask (deprecated but still works)
+    implementation libs.androidx.preference // For SharedPreferences
+    //noinspection GradleDependency
+    implementation libs.androidx.lifecycle.runtime // If needed
+    implementation libs.annotation // For @SuppressLint
+
+    implementation libs.androidx.sqlite
+    implementation libs.jooq.jooq
+    implementation libs.androidx.legacy.support.v4
+    coreLibraryDesugaring libs.tools.desugar.jdk.libs
+    implementation libs.net.jtds
+    implementation libs.mssql.jdbc
+}

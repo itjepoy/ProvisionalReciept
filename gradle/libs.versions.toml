@@ -1,0 +1,75 @@
+[versions]
+agp = "8.9.1"
+annotationVersion = "1.9.1"
+appcompatVersion = "1.6.1"
+circleimageview = "3.1.0"
+coreKtxVersion = "1.15.0"
+desugar_jdk_libsVersion = "2.1.5"
+dexter = "6.2.3"
+expandabletextview = "1.0.5"
+jooq = "3.19.15"
+jooqVersion = "3.20.2"
+jtdsVersion = "1.3.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+legacySupportV4Version = "1.0.0"
+material = "1.12.0"
+constraintlayout = "2.2.1"
+lifecycleLivedataKtx = "2.8.7"
+lifecycleViewmodelKtx = "2.8.7"
+materialVersion = "1.13.0-alpha12"
+mssqlJdbc = "9.4.0.jre8"
+navigationFragment = "2.8.9"
+navigationUi = "2.8.9"
+activity = "1.10.1"
+poiOoxml = "5.2.5"
+poi = "5.2.5"
+poiOoxmlVersion = "5.2.3"
+poiVersion = "5.2.3"
+preference = "1.2.1"
+sqlite = "2.4.0"
+media3Common = "1.7.1"
+compiler = "3.2.0-alpha11"
+
+[libraries]
+androidx-appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-legacy-support-v4 = { module = "androidx.legacy:legacy-support-v4", version.ref = "legacySupportV4Version" }
+androidx-lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime", version.ref = "lifecycleLivedataKtx" }
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragment" }
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationFragment" }
+androidx-preference = { module = "androidx.preference:preference", version.ref = "preference" }
+androidx-sqlite = { module = "androidx.sqlite:sqlite", version.ref = "sqlite" }
+annotation = { module = "androidx.annotation:annotation", version.ref = "annotationVersion" }
+circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
+dexter = { module = "com.karumi:dexter", version.ref = "dexter" }
+expandabletextview = { module = "at.blogc:expandabletextview", version.ref = "expandabletextview" }
+jooq-jooq = { module = "org.jooq:jooq", version.ref = "jooqVersion" }
+jooq-v31915 = { module = "org.jooq:jooq", version.ref = "jooq" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+material-v1130alpha12 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+mssql-jdbc = { module = "com.microsoft.sqlserver:mssql-jdbc", version.ref = "mssqlJdbc" }
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+net-jtds = { module = "net.sourceforge.jtds:jtds", version.ref = "jtdsVersion" }
+poi = { module = "org.apache.poi:poi", version.ref = "poi" }
+poi-ooxml = { module = "org.apache.poi:poi-ooxml", version.ref = "poiOoxml" }
+poi-ooxml-v523 = { module = "org.apache.poi:poi-ooxml", version.ref = "poiOoxmlVersion" }
+poi-v523 = { module = "org.apache.poi:poi", version.ref = "poiVersion" }
+tools-desugar_jdk_libs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar_jdk_libsVersion" }
+androidx-media3-common = { group = "androidx.media3", name = "media3-common", version.ref = "media3Common" }
+androidx-compiler = { group = "androidx.databinding", name = "compiler", version.ref = "compiler" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

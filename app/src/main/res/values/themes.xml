@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ProvisionalReciept" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/green_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/green_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Background and surface -->
+        <item name="android:statusBarColor">@color/green_700</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Tab text appearance fallback -->
+        <item name="tabTextAppearance">@style/TabTextStyle</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ProvisionalReciept" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+</resources>
