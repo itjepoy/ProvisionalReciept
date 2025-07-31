@@ -146,7 +146,7 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         protected String doInBackground(String... strings) {
             try {
-                con = connectionClass("sa", "g@t3k33p3R2024", "CAS", "10.10.0.73");
+                con = connectionClass("sa", "pass", "db_test", "0.0.0.0");
                 if (con == null) {
                     runOnUiThread(() -> Toast.makeText(LoginActivity.this, "You are not connected to network. Offline mode will activate", Toast.LENGTH_LONG).show());
                     Log.d("Network Error", "Not Connected to Server");
